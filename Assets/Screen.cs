@@ -17,6 +17,12 @@ public class Screen : MonoBehaviour
     public int b2;
     public int b3;
 
+    public GameObject FilmGameObject11;
+    public GameObject FilmGameObject12;
+    public GameObject FilmGameObject13;
+    public GameObject FilmGameObject21;
+    public GameObject FilmGameObject22;
+    public GameObject FilmGameObject23;
     private PolarizingFilm film11;
     private PolarizingFilm film12;
     private PolarizingFilm film13;
@@ -31,29 +37,23 @@ public class Screen : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GameObject filmGameObject11 = GameObject.Find("PolarizingFilm_1_1");
-        film11 = filmGameObject11.GetComponent<PolarizingFilm>();
-        GameObject button11 = filmGameObject11.transform.Find("ButtonSweetness").gameObject;
+        film11 = FilmGameObject11.GetComponent<PolarizingFilm>();
+        GameObject button11 = FilmGameObject11.transform.Find("ButtonSweetness").gameObject;
         buttonSweetness = button11.GetComponent<Button>();
 
-        GameObject filmGameObject12 = GameObject.Find("PolarizingFilm_1_2");
-        film12 = filmGameObject12.GetComponent<PolarizingFilm>();
-        GameObject button12 = filmGameObject12.transform.Find("ButtonSalinity").gameObject;
+        film12 = FilmGameObject12.GetComponent<PolarizingFilm>();
+        GameObject button12 = FilmGameObject12.transform.Find("ButtonSalinity").gameObject;
         buttonSalinity = button12.GetComponent<Button>();
 
-        GameObject filmGameObject13 = GameObject.Find("PolarizingFilm_1_3");
-        film13 = filmGameObject13.GetComponent<PolarizingFilm>();
-        GameObject button13 = filmGameObject13.transform.Find("ButtonGreasiness").gameObject;
+        film13 = FilmGameObject13.GetComponent<PolarizingFilm>();
+        GameObject button13 = FilmGameObject13.transform.Find("ButtonGreasiness").gameObject;
         buttonGreasiness = button13.GetComponent<Button>();
 
-        GameObject filmGameObject21 = GameObject.Find("PolarizingFilm_2_1");
-        film21 = filmGameObject21.GetComponent<PolarizingFilm>();
+        film21 = FilmGameObject21.GetComponent<PolarizingFilm>();
 
-        GameObject filmGameObject22 = GameObject.Find("PolarizingFilm_2_2");
-        film22 = filmGameObject22.GetComponent<PolarizingFilm>();
+        film22 = FilmGameObject22.GetComponent<PolarizingFilm>();
 
-        GameObject filmGameObject23 = GameObject.Find("PolarizingFilm_2_3");
-        film23 = filmGameObject23.GetComponent<PolarizingFilm>();
+        film23 = FilmGameObject23.GetComponent<PolarizingFilm>();
 
     }
 

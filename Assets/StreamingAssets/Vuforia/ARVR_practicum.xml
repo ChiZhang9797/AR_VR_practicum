@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="output-onlinetools" size="0.250000 0.250000" />
+    <ImageTarget name="Drone" size="0.215000 0.371631" />
+  </Tracking>
+</QCARConfig>
